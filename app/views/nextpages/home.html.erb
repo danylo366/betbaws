@@ -1,0 +1,63 @@
+<div id='container'>
+	<div id="content">
+		<%= render 'pages/header' %>
+		<div id="divContent">
+			<div id="subject"><b>Matches</b> 9 march-17march</div>
+			<div id="divBody">
+				<div id="divBodyContainer" class="span10">
+					<div id="divBodyContainerWrapper">
+					<% 5.times{ %>
+						<div class="span2">
+							<div class="plan">
+								<div class="plan_center">
+									<div id="divBodyContainerHead">
+										Standard
+									</div>
+									<div id="divBodyContainerPrice">
+										$40 per month
+									</div>
+									<div id="divBodyContainerDescription">
+										Perfect for those getting <br /> 
+										started with our app.
+									</div>
+									<div id="divBodyContainerBody">
+										<hr />
+										<p>15 projects</p>
+										<hr />
+										<p>5GB Storage</p>
+										<hr />
+										<p>Unlimited Users</p>
+										<hr />
+										<p>No Time Tracking</p>
+										<hr />
+										<p>Enhanced Security</p>
+										<hr />
+										<p>&nbsp;</p><hr />
+									</div>
+									<%= link_to("Sign Up", '',class: "btn btn-warning") %>
+								</div>
+							</div>
+						</div>
+					<% } %>
+					</div>
+					<script>
+						$(document).ready(function(){
+							var height = $('#divBodyContainerWrapper > .span2 .plan').height();
+							var width = $('#divBodyContainerWrapper > .span2 .plan').width();
+							$('#divBodyContainerWrapper .span2 .plan').mouseover(function(){
+								var addheight = height + 20;
+								var addwidth = width + 20;
+								$(this).height(addheight);
+								$(this).width(addwidth);
+							})
+							$('#divBodyContainerWrapper > .span2 .plan').mouseout(function(){
+								$(this).height(height);
+								$(this).width(width);
+							})
+						})
+					</script>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>

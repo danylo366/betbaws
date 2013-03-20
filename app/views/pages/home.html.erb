@@ -1,0 +1,25 @@
+<div id='container'>
+	<div id="content">
+		<%= render 'pages/header' %>
+		<div id="tableContent" class="span10">
+			<div class="row" id="tableHeadContent">
+				<div class="span4"><b>Matches</b> 9 march-17march</div>
+				<div class="span2">1</div>
+				<div class="span2">x</div>
+				<div class="span2">2</div>
+			</div>
+			<% 7.times{ %>
+			<div class="row" id="tableBodyContent">
+				<div class="span4">&nbsp;&nbsp;Liverpool v Aston Villa</div>
+				<% 3.times{ %>
+				<div class="span2"><div class="icon-thumbs-up"></div></div>
+				<% } %>
+			</div>
+			<% } %>
+			<div id="searchButton">
+				<%= link_to("Search for the best odds!", 'nextpage', class: "btn btn-success") %>
+			</div>
+		</div>
+	</div>
+</div>
+

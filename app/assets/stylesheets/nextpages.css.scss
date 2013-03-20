@@ -1,0 +1,102 @@
+// Place all the styles related to the nextpages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div#divContent{
+  margin: 15px 32px 0 42px;
+  float: left;
+  width: 700px;
+  div#subject{
+    color :white;  
+  }
+  div#divBody{    
+    margin: auto;    
+    position: relative;
+    width: 572px;
+    div#divBodyContainer{
+      background-color: #eee;
+      margin-top: 50px;
+      margin-bottom: 126px;
+      margin-left: 0;
+      width: 572px;
+      div#divBodyContainerWrapper{
+        background-color: white;
+        float: left;
+        margin: 7px;        
+        .span2{
+          position: relative;
+          width: 110px;
+          margin: 0px;
+          border-color: #eee;
+          border-left-style: solid;
+          border-width: 1px;
+          text-align: center;
+          div{
+            text-align: center;
+            margin: 6px;
+          }        
+          div#divBodyContainerHead{
+            font-weight: bold;                                    
+          }
+          div#divBodyContainerPrice{
+            background-color: #EEEEEE;
+            font-size: 8px;
+            font-style: italic;
+            margin: 0;
+            padding: 2px 0;            
+          }
+          div#divBodyContainerDescription{
+            font-size: 8px;
+            font-weight: bold;
+            line-height: 120%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
+          div#divBodyContainerBody{
+            hr{
+              margin: 0;
+              border-style: dashed;
+            }
+            p{
+              font-size: 8px;
+              margin: 0;
+            }
+          }
+          a{
+            border-radius: 15px 15px 15px 15px;
+            color: black;
+            font-size: 9px;
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 10px;
+            width: 65px;
+            padding: 0;
+          }               
+        }
+        .span2:nth-child(1){
+          border-left-style: none;
+        }      
+        .span2 .plan{
+          position:relative;
+          margin: 0;
+          .plan_center{
+            margin: 0;
+          }
+        }        
+        .span2:hover {          
+          .plan{
+            position: absolute;
+            background-color: #fff;
+            border-color: #eee;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 3px;
+            z-index: 1;
+            padding-top: 10px;
+            top: -12px;
+            left: -10px; 
+          }                      
+        }        
+      }      
+    }
+  }  
+}
